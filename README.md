@@ -50,7 +50,7 @@ else:
     print(f"❌ [RNF01] Lento demais: {tempo_ms:.0f}ms ← limite é 200ms")
 Output esperado (quando tudo estiver correto):
 🏋️ GymTrack — Validador de Treino
-========================================
+
 ✅ [RF01] Exercício válido: Supino Reto
 ✅ [RF02] Peso válido: 80kg
 ✅ [RF03] Repetições válidas: 10
