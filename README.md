@@ -30,6 +30,7 @@ Dica: use  if exercicio != "":  ...
 RF02 — O peso deve estar entre 1 e 300 kg
 
 SEU CÓDIGO AQUI: cheque se peso_kg está entre 1 e 300
+
 Dica: use  if 1 <= peso_kg <= 300:  ...
 
 RF03 — As repetições devem estar entre 1 e 50
@@ -39,27 +40,45 @@ SEU CÓDIGO AQUI: cheque se repeticoes está entre 1 e 50
 RNF01 — O registro deve ocorrer em menos de 200ms
 
 inicio = time.time()
+
 Simula o registro no banco de dados
+
 time.sleep(0.05)
+
 print(f"✅ Série registrada: {exercicio} | {peso_kg}kg x {repeticoes} reps")
+
 fim = time.time()
+
 tempo_ms = (fim - inicio) * 1000
+
 if tempo_ms < 200:
+
     print(f"✅ [RNF01] Tempo de registro: {tempo_ms:.0f}ms ← dentro do limite!")
+    
 else:
+
     print(f"❌ [RNF01] Lento demais: {tempo_ms:.0f}ms ← limite é 200ms")
+    
 Output esperado (quando tudo estiver correto):
+
 🏋️ GymTrack — Validador de Treino
 
 ✅ [RF01] Exercício válido: Supino Reto
+
 ✅ [RF02] Peso válido: 80kg
+
 ✅ [RF03] Repetições válidas: 10
+
 ✅ Série registrada: Supino Reto | 80kg x 10 reps
+
 ✅ [RNF01] Tempo de registro: 52ms ← dentro do limite!
+
 Parte 3 — Reflexão (5 min)
+
 Responda no código (como comentário):
 
 REFLEXÃO:
+
 1. Qual a diferença entre RF e RNF que você percebeu na prática?
 2. O que aconteceria se esquecêssemos o RNF de performance?
 3. Cite 1 RNF que o GymTrack deveria ter mas que você não implementou
