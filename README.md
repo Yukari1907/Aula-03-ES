@@ -3,12 +3,15 @@
 EXERCÍCIO PRÁTICO — Hands-on no Google Colab / VS Code
 🎯 Missão: Validador de Requisitos para um App de Academia
 Você foi contratado para desenvolver o sistema GymTrack — um app para academias acompanharem treinos de alunos.
+
 Parte 1 — Classificação (5 min)
 Liste 3 RFs e 3 RNFs para o GymTrack. Use a estrutura:
-RF01: O sistema deve [verbo] + [o quê]
-RNF01: O sistema deve [verbo] + [como/quanto]
+- RF01: O sistema deve [verbo] + [o quê]
+- RNF01: O sistema deve [verbo] + [como/quanto]
+  
 Parte 2 — Código Python (15 min)
 Complete os trechos marcados com # SEU CÓDIGO AQUI e rode no Colab:
+
 import time
 
 print("🏋️ GymTrack — Validador de Treino")
